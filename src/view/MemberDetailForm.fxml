@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MemberDetailsroot" prefHeight="860.0" prefWidth="917.0" stylesheets="@CSS%20file.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MemberDetailFormController">
+   <children>
+      <AnchorPane prefHeight="153.0" prefWidth="960.0" style="-fx-background-color: #80b866;">
+         <children>
+            <Label layoutX="51.0" layoutY="6.0" prefHeight="125.0" prefWidth="765.0" text="Member Details " textFill="#f8f8f8">
+               <graphic>
+                  <ImageView fitHeight="87.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assert/people.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="68.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextArea layoutX="14.0" layoutY="222.0" prefHeight="172.0" prefWidth="723.0" style="-fx-pref-column-count: 3; -fx-background-color: red; -fx-border-radius: 100;" text="In a library management system,&#10; the member details module typically includes&#10; several functions that allow the librarian or library &#10;administrator to manage the members of the library effectively. &#10;These functions include:">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </TextArea>
+      <JFXTextArea layoutX="213.0" layoutY="395.0" prefHeight="219.0" prefWidth="586.0" text="                    Add Member&#10;&#10;                    Delete Member&#10;&#10;                    Update Member&#10;&#10;                    Search Member">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="249.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/add-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="249.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/delete-user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="249.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/update%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="249.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/group.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Button" layoutX="14.0" layoutY="160.0" onAction="#back" prefHeight="54.0" prefWidth="100.0" style="-fx-background-color: #a9a9a9; -fx-background-radius: 10;" stylesheets="@../Style.css" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

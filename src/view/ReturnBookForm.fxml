@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="returnroot" prefHeight="860.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReturnBookFormController">
+   <children>
+      <AnchorPane prefHeight="131.0" prefWidth="917.0" style="-fx-background-color: #80b866;">
+         <children>
+            <Label layoutX="311.0" layoutY="-1.0" prefHeight="131.0" prefWidth="528.0" text="Return Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="66.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="88.0" fitWidth="105.0" layoutX="186.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/return.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXComboBox fx:id="cmbissueId" layoutX="92.0" layoutY="269.0" onAction="#Onissue" prefHeight="47.0" prefWidth="357.0" promptText="Issue Book Id" />
+      <VBox layoutX="83.0" layoutY="389.0" prefHeight="308.0" prefWidth="357.0" spacing="50.0">
+         <children>
+            <JFXTextField fx:id="mId" prefHeight="37.0" prefWidth="357.0" promptText="MemberId" />
+            <JFXTextField fx:id="bId" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Book Id" />
+            <JFXTextField fx:id="issueDate" labelFloat="true" layoutX="10.0" layoutY="41.0" promptText="Issue Date" />
+            <JFXTextField fx:id="dueDate" labelFloat="true" layoutX="10.0" layoutY="72.0" promptText="Due Date" />
+         </children>
+      </VBox>
+      <DatePicker fx:id="returnDate" layoutX="558.0" layoutY="722.0" prefHeight="31.0" prefWidth="270.0" />
+      <Label layoutX="361.0" layoutY="715.0" prefHeight="38.0" prefWidth="132.0" text="Return Date" />
+      <JFXButton layoutX="60.0" layoutY="769.0" onAction="#Onreturn" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: red;" text="Return" textFill="WHITE" />
+      <JFXButton layoutY="131.0" onAction="#back" prefHeight="47.0" prefWidth="95.0" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="returnId" focusColor="#bc0b0b" labelFloat="true" layoutX="11.0" layoutY="192.0" prefHeight="31.0" prefWidth="182.0" promptText="Return Id" unFocusColor="#464141">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

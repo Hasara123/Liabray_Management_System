@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Loginroot" prefHeight="860.0" prefWidth="906.0" style="-fx-background-color: #cfd2dd;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginformController">
+   <children>
+      <Label alignment="CENTER" layoutX="385.0" layoutY="138.0" prefHeight="80.0" prefWidth="255.0" text="LOGIN">
+         <font>
+            <Font name="Microsoft Sans Serif" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserId" labelFloat="true" layoutX="319.0" layoutY="308.0" prefHeight="41.0" prefWidth="386.0" promptText="User Name" />
+      <JFXButton fx:id="LoginButton" layoutX="390.0" layoutY="568.0" onAction="#Login" prefHeight="52.0" prefWidth="280.0" style="-fx-background-color: green; -fx-background-radius: 20;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <RadioButton layoutX="279.0" layoutY="478.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="168.0" text="Forget Passowrd" textFill="#261d90">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <JFXButton layoutX="197.0" layoutY="709.0" onAction="#SignUp" prefHeight="11.0" prefWidth="333.0" text="Don't Have A Account,Click Here to SignUp" />
+      <AnchorPane prefHeight="860.0" prefWidth="202.0" style="-fx-background-color: #304957;" />
+      <ImageView fitHeight="100.0" fitWidth="132.0" layoutX="347.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/240_F_250271442_s1JYQbkJXr4yypcZ2ZTk2xEqkTnE85Zr.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="390.0" layoutY="647.0" onAction="#Cancel" prefHeight="52.0" prefWidth="280.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblMsgLabel" layoutX="319.0" layoutY="253.0" prefHeight="31.0" prefWidth="280.0" textFill="RED" />
+      <JFXPasswordField fx:id="txtUserPw" layoutX="319.0" layoutY="399.0" prefHeight="31.0" prefWidth="395.0" promptText="User Password" />
+   </children>
+</AnchorPane>

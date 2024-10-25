@@ -1,0 +1,18 @@
+.JFXButton Button {
+    -fx-background-color: #d3d3d3;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-text-fill: #000000;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 10px;
+}
+
+.JFXButton Button:hover {
+    -fx-background-color: #a9a9a9;
+}
+
+
+-fx-background-image: url("file:///path/to/image.jpg");
+-fx-background-size: cover;
+-fx-background-position: center;
+-fx-background-repeat: no-repeat;

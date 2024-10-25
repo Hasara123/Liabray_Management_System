@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MemberCRUDroot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="860.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MemberCRUDController">
+   <children>
+      <JFXButton layoutY="96.0" onAction="#back" prefHeight="47.0" prefWidth="143.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <VBox layoutX="52.0" layoutY="231.0" prefHeight="436.0" prefWidth="318.0" spacing="70.0">
+         <children>
+            <JFXButton onAction="#Add" prefHeight="131.0" prefWidth="318.0" style="-fx-background-color: #e4e5e7; -fx-background-radius: 30;" text="Add Member">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" onAction="#Delete" prefHeight="131.0" prefWidth="318.0" style="-fx-background-color: #e4e5e7; -fx-background-radius: 30;" text="Delete Member">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox layoutX="481.0" layoutY="238.0" prefHeight="436.0" prefWidth="318.0" spacing="70.0">
+         <children>
+            <JFXButton onAction="#Search" prefHeight="131.0" prefWidth="318.0" style="-fx-background-color: #e4e5e7; -fx-background-radius: 30;" text="Search Member">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" onAction="#Update" prefHeight="131.0" prefWidth="318.0" style="-fx-background-color: #e4e5e7; -fx-background-radius: 30;" text="Update Member">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXButton layoutX="322.0" layoutY="674.0" onAction="#ViewAll" prefHeight="131.0" prefWidth="318.0" style="-fx-background-color: #e4e5e7; -fx-background-radius: 30;" text="View All Members">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="-4.0" prefHeight="96.0" prefWidth="924.0" style="-fx-background-color: #80b866;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Startroot" prefHeight="860.0" prefWidth="960.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StartFormController">
+   <children>
+      <JFXButton layoutX="376.0" layoutY="551.0" onAction="#Start" prefHeight="79.0" prefWidth="209.0" ripplerFill="#141010" style="-fx-background-color: #ee9ca7;" text="Start">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
